@@ -30,6 +30,9 @@ display_surface = pygame.display.set_mode((displayX, displayY))
 rectangle1 = pygame.Rect(0,725,1400,75)
 rectangle2 = pygame.Rect(0,700,1400,25)
 
+#creates character spawn
+rectangleC = pygame.Rect(10, 600, 25, 50)
+
 pygame.display.set_caption('Treasure Hunt')
 
 background = pygame.transform.scale(background, BackgroundDefault)
@@ -41,6 +44,9 @@ pygame.display.flip()
 #draws the floor
 pygame.draw.rect(display_surface, BROWN, rectangle1)
 pygame.draw.rect(display_surface, GREEN, rectangle2)
+
+#draws character
+pygame.draw.rect(display_surface, WHITE, rectangleC)
 
 running = True
 
