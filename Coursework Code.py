@@ -26,6 +26,7 @@ background = pygame.image.load(image_filename)
 
 display_surface = pygame.display.set_mode((displayX, displayY)) 
 
+#creates attributes for the floor
 rectangle1 = pygame.Rect(0,725,1400,75)
 rectangle2 = pygame.Rect(0,700,1400,25)
 
@@ -37,6 +38,7 @@ display_surface.blit(background, (0,0))
 
 pygame.display.flip()
 
+#draws the floor
 pygame.draw.rect(display_surface, BROWN, rectangle1)
 pygame.draw.rect(display_surface, GREEN, rectangle2)
 
