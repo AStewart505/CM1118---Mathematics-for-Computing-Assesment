@@ -14,6 +14,7 @@ BLACK = (0,0,0)
 BLUE = (0,0,255)
 RED = (255,0,0)
 GREEN = (0,255,0)
+BROWN = (150, 75, 0)
 
 #Sets the Default size of the screen
 displayX = 1400
@@ -25,6 +26,9 @@ background = pygame.image.load(image_filename)
 
 display_surface = pygame.display.set_mode((displayX, displayY)) 
 
+rectangle1 = pygame.Rect(0,725,1400,75)
+rectangle2 = pygame.Rect(0,700,1400,25)
+
 pygame.display.set_caption('Treasure Hunt')
 
 background = pygame.transform.scale(background, BackgroundDefault)
@@ -32,6 +36,9 @@ background = pygame.transform.scale(background, BackgroundDefault)
 display_surface.blit(background, (0,0))
 
 pygame.display.flip()
+
+pygame.draw.rect(display_surface, BROWN, rectangle1)
+pygame.draw.rect(display_surface, GREEN, rectangle2)
 
 running = True
 
