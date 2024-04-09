@@ -37,8 +37,8 @@ dartBy=0
 dartCx=0
 dartCy=0
 
-STANDING_SURFACE = pygame.transform.scale(pygame.image.load("jummping/mario_standing.png"), (48, 64))
-JUMPING_SURFACE = pygame.transform.scale(pygame.image.load("jummping/mario_jumping.png"), (48, 64))
+STANDING_SURFACE = pygame.transform.scale(pygame.image.load("mario_standing.png"), (48, 64))
+JUMPING_SURFACE = pygame.transform.scale(pygame.image.load("mario_jumping.png"), (48, 64))
 BACKGROUND = pygame.transform.scale(pygame.image.load("Junglebackground.jpg"),(1400,800))\
 
 rectangle1 = pygame.Rect(0,725,1400,75)
